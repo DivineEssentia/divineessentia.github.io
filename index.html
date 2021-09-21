@@ -8,76 +8,79 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="sus.css">
   <title>mongus</title>
-  
-  </style>
-</head>
-<body data-new-gr-c-s-check-loaded="14.1029.0" data-gr-ext-installed="">
-  <embed src="doot.mp3" autostart="true" width="20" height="20"></embed>
-
   <style>
-
     body {
-      margin: 0;
-      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: white;
-      background-image: url('bac.jpeg');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
-
-
+      font-family: "Lato", sans-serif;
     }
-    #trollge {
+    
+    .sidenav {
+      height: 100%;
+      width: 0;
       position: fixed;
-      right: 0;
-      bottom: 0;
-      min-width: 100%;
-      max-width: 100%;
-      overflow: hidden;
-      z-index: -100;
-    }
-    .topnav {
-      overflow: hidden;
-      background-color: white;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: lightskyblue;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
     }
     
-    .topnav a {
-      float: left;
-      color: #858585;
-      text-align: center;
-      padding: 14px 16px;
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
       text-decoration: none;
-      font-size: 17px;
-      font-weight: bold;
-    }
-    
-    .topnav a:hover {
-      background-color: rgba(85, 85, 85, 0.452);
-      color: black;
-      font-weight: bold;
-    }
-    
-    .topnav a.active {
-      background-color: #00baff;
+      font-size: 25px;
       color: white;
-      font-weight: bold;
+      display: block;
+      transition: 0.3s;
+    }
+    
+    .sidenav a:hover {
+      color: #949494;
+    }
+    
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+    
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
     }
     </style>
-  <div class="topnav">
-    <a class="active" href="index.html">Home</a>
+</head>
+<body data-new-gr-c-s-check-loaded="14.1029.0" data-gr-ext-installed="">
+  <audio autoplay>
+    <source src="doot.ogg" type="audio/ogg">
+  </audio>
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>
     <a href="client.html">client</a>
     <a href="https://grabify.link/6D6ROG">Doupe for 2bt2</a>
     <a href="abt me.html">about me</a>
     <a href="discord.html">deezcord</a>
     <a href="crash.html">crash</a>
-
   </div>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
   <header>
     <div class="container">
       <a id="a-title">
-        <h1 class="p1">If you're here for a hacked client for 1.17.1,</h1>
-        <h1 class="p1">you're in the right place. </h1>
-        <p class="p1">(definatly not a skid)</p>
+        <h1 class="p1">the funny</h1>
       </section>
     </div>
   </header>
