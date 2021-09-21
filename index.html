@@ -9,14 +9,19 @@
   <link rel="stylesheet" href="sus.css">
   <title>mongus</title>
   <style>
+    #myVideo {
+          position: fixed;
+          right: 0;
+          bottom: 0;
+          min-width: 100%;
+          max-width: 100%;
+          overflow: hidden;
+          z-index: -100;
+        }  
      body {
       margin: 0;
       font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: white;
-      background-image: url('bac.jpeg');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
+      color: black;
      }
     
     .sidenav {
@@ -60,9 +65,9 @@
     </style>
 </head>
 <body data-new-gr-c-s-check-loaded="14.1029.0" data-gr-ext-installed="">
-  <audio autoplay>
-    <source src="doot.ogg" type="audio/ogg">
-  </audio>
+  <video autoplay="" muted="" loop="" id="myVideo">
+    <source src="the.mp4" type="video/mp4">
+  </video>
   <script>
     function openNav() {
       document.getElementById("mySidenav").style.width = "250px";
