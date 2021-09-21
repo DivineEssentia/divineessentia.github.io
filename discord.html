@@ -13,63 +13,80 @@
 </head>
 <body data-new-gr-c-s-check-loaded="14.1029.0" data-gr-ext-installed="">
 
-  <style>
-
-    body {
-      margin: 0;
-      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: white;
-      background-image: url('bac.jpeg');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
-
-
-    }
-    #trollge {
-      position: fixed;
-      right: 0;
-      bottom: 0;
-      min-width: 100%;
-      max-width: 100%;
-      overflow: hidden;
-      z-index: -100;
-    }
-    .topnav {
-      overflow: hidden;
-      background-color: white;
-    }
-    
-    .topnav a {
-      float: left;
-      color: #858585;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;    
-      font-size: 17px;
-      font-weight: bold;
-    }
-    
-    .topnav a:hover {
-      background-color: rgba(85, 85, 85, 0.452);
-      color: black;
-      font-weight: bold;
-    }
-    
-    .topnav a.active {
-      background-color: #00baff;
-      color: white;
-      font-weight: bold;
-    }
-    </style>
-    <div class="topnav">
+    <style>
+        body {
+            margin: 0;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            background-image: url('bac.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: lightskyblue;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+        
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+        }
+        
+        .sidenav a:hover {
+            color: #949494;
+        }
+        
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 250px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+        
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        }
+        </style>
+    </head>
+    <body data-new-gr-c-s-check-loaded="14.1029.0" data-gr-ext-installed="">
+        <audio autoplay>
+        <source src="doot.ogg" type="audio/ogg">
+        </audio>
+        <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+      <div id="mySidenav" class="sidenav">
         <a href="index.html">Home</a>
-        <a href="client.html">client</a>
+        <a href="client.html">heck client</a>
         <a href="https://grabify.link/6D6ROG">Doupe for 2bt2</a>
-        <a href="abt me.html">About me</a>
-        <a class="active" href="discord.html">deezcord</a>
+        <a href="abt me.html">about me</a>
+        <a href="discord.html">deezcord</a>
         <a href="crash.html">crash</a>
-    </div>
+    
+      </div>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
     <div class="container">
         <header>
             <br>
