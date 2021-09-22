@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: black;
-    background-image: url('https://loading.io/assets/img/c/bg/wave.svg');
+    background-image: url('index.svg');
     background-repeat: no-repeat;
     background-size: cover;
    }
