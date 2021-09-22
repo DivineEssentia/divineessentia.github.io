@@ -94,19 +94,20 @@
     <h2>login</h2><br>    
     <div class="login">    
         <form>
-            <label for="pswd">Enter your password: </label>
+            <label for="pswd">password</label>
             <input type="password" id="pswd">
             <input type="button" value="Submit" onclick="checkPswd();" />
         </form>
         <script type="text/javascript">
             function checkPswd() {
-                var confirmPassword = "meems";
+                var confirmPassword = "divineiscool";
                 var password = document.getElementById("pswd").value;
                 if (password == confirmPassword) {
                      window.location="meme-stash.html";
                 }
                 else{
-                    alert("Passwords do not match.");
+                    alert("leave. ur computer doesnt have enough ram");
+                    window.location.href = "https://downloadmoreram.com/";
                 }
             }
         </script>   
