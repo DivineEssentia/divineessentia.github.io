@@ -19,7 +19,6 @@
         margin: 0;
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         color: white;
-        background-image: url(hyperspace.svg);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
@@ -65,7 +64,7 @@
         color: text;
         max-width: 90%;
         padding: 2em 3em;
-        background: rgba(155, 155, 155, 0.4);
+        background: rgba(0, 0, 0, 0.4);
         text-shadow: 0px 0px 2px #131415;
         font-family: 'Open Sans', sans-serif;
         border-radius: 25px;
@@ -76,7 +75,20 @@
         .funnynav a {font-size: 18px;}
     }
     img {
-    border-radius: 10px;
+        border-radius: 10px;
+    }
+    video {
+        border-radius: 10px;
+    }
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+    }   
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
     }
     </style>
 </head>
@@ -96,7 +108,7 @@
   <div id="susnav" class="funnynav">
     <a href="index.html">Home</a>
     <a href="client.html">Client</a>
-    <a href="https://grabify.link/6D6ROG">Dupe for all versions of mc</a>
+    <a href="https://www.youtube.com/watch?v=QtBDL8EiNZo">Dupe for all versions of mc</a>
     <a href="abt me.html">about me</a>
     <a href="discord.html">Discord stuff</a>
     <a href="crash.html">Crash exploit</a>
@@ -111,15 +123,33 @@
     </div>
     <br>
     <br>
-    <div class="text"  style="margin-top:140%">
-        <img class="img" src="meme1.gif">
-        <img src="meme2.gif">
-        <img src="meme4.gif">
-        <img src="meme5.png">
-        <img src="meme6.gif">
-        <img src="meme7.gif">
-        <img src="meme8.jpg">
-        <video controls autoplay src="the.mp4"></video>
+    <div class="text"  style="margin-top:90%">
+        <div class="row">
+            <div class="column">
+                <img src="meme1.gif" alt="mogus" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="meme2.gif" alt="meme" style="width:100%">
+            </div>
+        <div class="row">
+            <div class="column">
+                <img src="meme4.gif" alt="meme" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="meme6.gif" alt="mogus" style="width:100%">
+            </div>
+        </div>
+        </div>
+            
+            <div class="column">
+                <img src="meme7.gif" alt="sus" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="meme8.jpg" alt="meme" style="width:100%">
+            </div>
+        </div>
+        </div>
+        </div>
     </div>
   </header>
 </body>
