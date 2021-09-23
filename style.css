@@ -1,27 +1,26 @@
 body {
     margin: 0;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: black;
+    color: white;
     background-image: url('index.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-   }
+   }    
+    .funnynav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color:rgba(0, 0, 0, 0.4);
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
   
-  .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: lightskyblue;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
-  
-  .sidenav a {
+  .funnynav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -30,11 +29,11 @@ body {
     transition: 0.3s;
   }
   
-  .sidenav a:hover {
+  .funnynav a:hover {
     color: #949494;
   }
   
-  .sidenav .closebtn {
+  .funnynav .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
@@ -55,6 +54,6 @@ body {
     border-radius: 25px;
     }
   @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+    .funnynav {padding-top: 15px;}
+    .funnynav a {font-size: 18px;}
     }
