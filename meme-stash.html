@@ -19,6 +19,7 @@
         margin: 0;
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         color: white;
+        background-image: url(hyperspace.svg);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
@@ -56,11 +57,26 @@
         font-size: 36px;
         margin-left: 50px;
     }
-    
+    .text {
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%,-50%);
+        color: text;
+        max-width: 90%;
+        padding: 2em 3em;
+        background: rgba(155, 155, 155, 0.4);
+        text-shadow: 0px 0px 2px #131415;
+        font-family: 'Open Sans', sans-serif;
+        border-radius: 25px;
+    }
     
     @media screen and (max-height: 450px) {
         .funnynav {padding-top: 15px;}
         .funnynav a {font-size: 18px;}
+    }
+    img {
+    border-radius: 10px;
     }
     </style>
 </head>
@@ -92,7 +108,17 @@
   <header>
     <div class="text">
         <h1>Divine's Secret Meme Stash</h1>
-        
+    </div>
+    <br>
+    <br>
+    <div class="text"  style="margin-top:140%">
+        <img class="img" src="meme1.gif">
+        <img src="meme2.gif">
+        <img src="meme4.gif">
+        <img src="meme5.png">
+        <img src="meme6.gif">
+        <img src="meme7.gif">
+        <img src="meme8.jpg">
     </div>
   </header>
 </body>

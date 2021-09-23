@@ -19,6 +19,7 @@
         margin: 0;
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         color: white;
+        background-image: url(index\ \(1\).svg);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
@@ -56,7 +57,71 @@
         font-size: 36px;
         margin-left: 50px;
     }
-    
+    .form {
+	position: absolute;
+		top: 50%;
+	  left: 50%;
+		transform: translate(-50%, -50%);
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 80%;
+}
+.form .form_input {
+	flex: 1 1 300px;
+	margin: 10px;
+	border: none;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: #E6E6E6;
+	outline: 3px solid transparent;
+	transition: outline .2s, flex-basis .2s;
+}
+.form .form_input:nth-child {
+	flex: 3 1 300px;
+}
+.form .form_input:hover,
+.form .form_input:focus {
+	outline: 3px solid #708DFD;
+}
+.form .form_submit {
+	position: relative;
+		top: -5px;
+	flex: 1 1 100px;
+	margin: 10px;
+	cursor: pointer;
+	border: none;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: #708DFD;
+	color: #FFFFFF;
+	box-shadow: 0 12px 7px -5px rgba(0,0,0,0.35);
+	transition: box-shadow .2s, top .2s, background-color .2s, flex-basis .2s;
+}
+.form .form_submit:hover,
+.form .form_submit:focus {
+	box-shadow: 0 0 0 0 rgba(0,0,0,0.35);
+	top: 0;
+}
+.form .form_submit:focus {
+	background-color: #4A65CE;
+	outline: 0;
+}
+.text {
+    position: ablsolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    color: text;
+    max-width: 90%;
+    padding: 2em 3em;
+    background: rgba(0, 0, 0, 0.4);
+    text-shadow: 0px 0px 2px #131415;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 25px;
+    width: 50%;
+    height: 10%;
+    }
     
     @media screen and (max-height: 450px) {
         .funnynav {padding-top: 15px;}
@@ -84,19 +149,17 @@
     <a href="abt me.html">about me</a>
     <a href="discord.html">Discord stuff</a>
     <a href="crash.html">Crash exploit</a>
-    <a href="roblox.html">roblox hacks</a>
+    <a href="roblox.html">Roblox hacks</a>
     <a href="login.html">login</a>
 
   </div>
   <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
   <header>
     <div class="text">
-    <h2>login</h2><br>    
     <div class="login">    
-        <form>
-            <label for="pswd">password</label>
-            <input type="password" id="pswd">
-            <input type="button" value="Submit" onclick="checkPswd();" />
+        <form class="form">
+            <input class="form_input" type="password" id="pswd">
+            <input class="form_submit" type="button" value="Submit" onclick="checkPswd();" />
         </form>
         <script type="text/javascript">
             function checkPswd() {
