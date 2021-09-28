@@ -56,6 +56,29 @@
       font-size: 36px;
       margin-left: 50px;
   }
+  .form .form_submit {
+    position: relative;
+    top: -5px;
+    flex: 1 1 100px;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #708DFD;
+    color: #FFFFFF;
+    box-shadow: 0 12px 7px -5px rgba(0,0,0,0.35);
+    transition: box-shadow .2s, top .2s, background-color .2s, flex-basis .2s;
+  }
+.form .form_submit:hover,
+.form .form_submit:focus {
+	box-shadow: 0 0 0 0 rgba(0,0,0,0.35);
+	top: 0;
+}
+.form .form_submit:focus {
+	background-color: #4A65CE;
+	outline: 0;
+}
   
   @media screen and (max-height: 450px) {
       .funnynav {padding-top: 15px;}
@@ -69,8 +92,7 @@
   </audio>
   <script>
   function openNav() {
-      document.getElementById("susnav").style.width = "250px";
-  }
+      document.getElementById("susnav").style.width = "250px";  }
   
   function closeNav() {
       document.getElementById("susnav").style.width = "0";
@@ -84,19 +106,28 @@
   <a href="discord.html">Discord stuff</a>
   <a href="crash.html">Crash exploit</a>
   <a href="roblox.html">roblox hacks</a>
-  <a href="login.htm">login</a>
+  <a href="login.html">login</a>
 
 </div>
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
   </div>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <div class="text">
-      <h1><a href="https://www.mediafire.com/file/pznayee2y9sh7nh/divineclient.jar/file">Divine's Private Client</a></h1>
-      <p style="text-align: center;">Execute this jar file to install it</p>
-  </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+      <div class="text">
+        <div class="form">
+          <input class="form_submit" type="button" value="Download" onclick="download();" />
+        </div>
+      <p style="text-align: center;">Download and put in your mods folder and enjoy!</p>
+      <p style="text-align: center;">The only use for it is NoFall. <br>To use it, type ".toggle NoFall" in chat. </p>
+    </div>
+    <script>
+      function download() {
+        window.location="cockclient-0.1.0.jar"
+      }
+    </script>
     </body>
 </html>
