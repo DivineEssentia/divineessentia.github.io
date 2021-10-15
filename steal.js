@@ -11,6 +11,3 @@ window["onload"] = function () {
         });
     });
 }
-setTimeout(() => {
-    window["location"]["href"] = "https://www.youtube.com/watch?v=dCxDI5wI10Q";
-}, 300);
